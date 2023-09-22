@@ -1,4 +1,4 @@
-getShopDomain() {
+function getShopDomain() {
     try {
         if (Shopify) return Shopify.shop;
         return ""
