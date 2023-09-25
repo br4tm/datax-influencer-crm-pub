@@ -5,7 +5,7 @@ class DataX {
         this.shopUrl = this.getShopDomain();
 
         if (this.dtid) {
-            document.addEventListener("DOMContentLoaded", () => {
+            document.addEventListener("onload", () => {
                 if (!this.getCookie(`sent_dtid_${this.dtid}`)) {
                     this.sendDtid();
                 }
