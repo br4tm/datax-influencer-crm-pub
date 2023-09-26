@@ -4,12 +4,8 @@ class DataX {
         this.dtid = this.getDtidFromUrl();
         this.shopUrl = this.getShopDomain();
 
-        if (this.dtid) {
-            document.addEventListener("onload", () => {
-                if (!this.getCookie(`sent_dtid_${this.dtid}`)) {
-                    this.sendDtid();
-                }
-            });
+        if (this.dtid && !this.getCookie(`sent_dtid_${this.dtid}`)) {
+            this.sendDtid();
         }
     }
 
