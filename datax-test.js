@@ -1,6 +1,6 @@
 class DataX {
     constructor() {
-        this.apiUrl = "https://y8i6cu0dlct5i4c-rmlpz1dev.adb.eu-frankfurt-1.oraclecloudapps.com/ords/shpreporter/dataxtrackingservices/test";
+        this.apiUrl = "https://y8i6cu0dlct5i4c-rmlpz1dev.adb.eu-frankfurt-1.oraclecloudapps.com/ords/shpreporter/dataxtrackingservices/dtid";
         this.dtid = this.getDtidFromUrl();
         this.shopUrl = this.getShopDomain();
 
